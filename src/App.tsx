@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useRef } from 'react';
 import './App.css';
+import GradientBg from './Components/Common/GradientBg';
+import Hero from './Components/Hero/Hero';
+import Footer from './Components/Footer/Footer';
+import About from './Components/About/About';
 
 function App() {
+  const aboutSectionRef = useRef<HTMLDivElement>(null);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GradientBg className="w-screen h-screen flex flex-col">
+        <Hero aboutSectionRef={aboutSectionRef} />
+        <About ref={aboutSectionRef} />
+        <Footer />
+        </GradientBg>
+
     </div>
   );
 }

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+
+.intro-head{
+
+   /* color: rgb(247,242,235); */
+   color: rgb(225,226,230);
+
+   /* font-family: 'Roboto', sans-serif; */
+   font-family: 'Rubik', sans-serif;
+   
+   
+}
+.text-4xl {
+    font-size: 3.75rem;
+    line-height: 1em; 
+    font-weight: 700;
+    letter-spacing: -.015em;
+  }
+.type-look { 
+    color: rgb(64,224,208);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.period-col {
+    color: rgb(64,224,208);
+    font-family: 'Rubik', sans-serif;
+}
+#glow-about-btn{
+    color: rgb(225,226,230);
+    border-color: rgb(225,226,230) ;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 16px;
+    transition: all 0.3s ease-in-out;
+
+}
+#glow-about-btn:hover {
+    color: rgb(64,224,208,1);
+    border-color: rgb(64,224,208,1) ;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+.icon-transition {
+  display: inline-block;
+  transition: all 0.4s ease; 
+  margin-left: 10px;
+}
+
+.icon-right {
+  opacity: 1;
+  transform: rotate(0deg) translateY(-1px);
+}
+
+.icon-down {
+  opacity: 1;
+  transform: rotate(90deg);
+}
+
+ 
+

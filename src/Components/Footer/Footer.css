@@ -1,0 +1,32 @@
+.footer {
+    position: fixed;
+    right: 5;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background-color: transparent;
+  }
+  
+  .glow-logo ul {
+    list-style: none;
+    margin-right: 20px;
+    margin-bottom: 15px
+  }
+  
+  
+  .glow-logo .social-link {
+    font-size: 22px;
+    color: rgb(225, 226, 230);
+    padding: 10px;
+    display: inline-block;
+    transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
+   
+  }
+
+.glow-logo .social-link:hover {
+    color: rgb(64, 224, 208, 1);
+    transform: translateY(-5px);
+} 
+  
