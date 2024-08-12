@@ -1,0 +1,6 @@
+[ { "_id": "P-1", "name": "SnapSuite", "description": "This is snapsuite", "github": "2023-01-10",
+    "demo": "2023-05-15", "image": "","skills":"java"  },
+    { "_id": "P-2", "name": "Kanbas", "description": "This is kanbas", "github": "2023-01-10",
+    "demo": "2023-05-15", "image": "","skills":"react,express"  }
+ ]
+
