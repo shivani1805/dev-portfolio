@@ -1,6 +1,57 @@
-[ { "_id": "P-1", "name": "SnapSuite", "description": "This is snapsuite", "github": "2023-01-10",
-    "demo": "2023-05-15", "image": "","skills":"java"  },
-    { "_id": "P-2", "name": "Kanbas", "description": "This is kanbas", "github": "2023-01-10",
-    "demo": "2023-05-15", "image": "","skills":"react,express"  }
+[ { "_id": "P-1",
+    "name": "Pixel Perfect", 
+    "description": "An image manipulation and enhancement tool designed to offer a comprehensive array of features. Built using the MVC architecture and the Command Design Pattern, it supports multiple interaction methods, including a Swing-based graphical user interface, an interactive text-based interface and batch processing via script files. Users can apply a wide range of filters such as sepia, luma and brightening, as well as perform image operations like sharpening, flipping, dithering and compression. Pixel Perfect is compatible with various image formats, including JPG, PNG and PPM and provides the flexibility to save manipulated images in any desired format.",
+    "github": "https://github.com/shivani1805/Image-Manipulation-and-Enhancement",
+    "demo": "2023-05-15",
+    "image": [
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/ime.jpg",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/ime2.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/ime3.png"
+    ],
+    "skills":"Java, Swing" },
+   
+    { "_id": "P-2",
+    "name": "Kanbas",
+     "description": "A web application inspired by the Learning Management System - Canvas, designed to streamline course management and administration. Key features include the ability to create new courses, each with its own set of modules and assignments which enables easy management of all aspects of the educational content through an intuitive interface. MongoDB is used to handle data for users, assignments, courses, and modules. The backend is powered by a Node.js server and Express, which handles routing and server-side logic to ensure smooth operation and interaction with the database. The frontend is deployed using <span style='color: #40e0d0;'>Netlify</span>, while the backend server is hosted on <span style='color: #40e0d0;'>Render</span>."
+    ,"github": "https://github.com/shivani1805/kanbas-react-web-app",
+    "demo": "2023-05-15",
+    "image": [
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/kanbas.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/kanbas-1.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/kanbas-3.png"
+    ],
+    "skills":"React,Express,Node,MongoDB"  },
+   
+    { "_id": "P-3",
+    "name": "Career Cupid",
+    "description": "An efficient tool for both sides of the hiring equation, job seekers and recruiters. Recruiters can create profiles, post job openings, and manage applications, including viewing resumes and shortlisting candidates who apply. Job seekers can browse job listings that match their skill set and apply directly through the platform. To ensure user verification, a confirmation email is sent upon signup, allowing users to proceed with setting up their profiles. The platform features extensive admin functionality, including the requirement for recruiters to be approved by an admin before posting jobs. Additionally, admins have the ability to view and search seekers, postings, and recruiters across the board. To balance accessibility and privacy, anonymous users have limited access, while logged-in users enjoy full access to profiles and application details.",
+    "github": "https://github.com/shivani1805/career-cupid-fe",
+    "demo": "2023-05-15",
+    "image": [
+            "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-1.png",
+            "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-2.png",
+            "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-7.png",
+            "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-4.png",
+            "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-5.png",
+            "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-6.png"
+            
+    ],
+    "skills":"React,Express,Material UI"  },
+   
+    { "_id": "P-4",
+    "name": "Route Buddy",
+    "description": "This is career cupid",
+    "github": "https://github.com/shivani1805/Bus-Booking-System",
+    "demo": "2023-05-15",
+    "image": ["/mages/neu.jpg"],
+    "skills":"react,express"  },
+   
+    { "_id": "P-5",
+    "name": "Dev Portfolio",
+    "description": "This is career cupid",
+    "github": "https://github.com/shivani1805/dev-portfolio",
+    "demo": "2023-05-15",
+    "image": ["/mages/neu.jpg"],
+    "skills":"react,express"  }
  ]
 

@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
 .project-container {
     display: flex;
-    flex-direction: column; 
+    flex-direction: row;  
+    flex-wrap: wrap;  
+    justify-content: center;
     align-items: center; 
     max-width: 1200px;
     margin: 60px auto 0px auto;
     padding: 0px 20px 30px 20px; 
+
+
 }
 
 .project-header {
@@ -14,7 +20,9 @@
     font-weight: 100;
     letter-spacing: -0.015em;
     text-align: center; 
-    margin-bottom: 40px; 
+    margin-bottom: 20px; 
+    width: 100%; 
+    
 }
 
 .project-header::after {
@@ -25,29 +33,47 @@
     display: block;
     margin: 15px auto;
 }
+.project-sub-header{
+    color: rgb(225, 226, 230);
+    text-align: center; 
+    margin-bottom:40px; 
+    font-family: monospace;
+    width: 100%;  
+}
 
 .project-container .col-md-6 {
-    max-width: 800px;
+    max-width: 50%; 
     width: 100%; 
     padding: 20px;
     box-sizing: border-box;
+    
     
 }
 
 .project-card {
     text-align: left;
     background-color: rgb(17, 34, 64) !important;
+     /* rgb(17, 34, 64) !important; */
+    /* #1d293a !important; */
     width: 100%; 
- 
-   
+    height: 720px; 
 }
+.card-content-container {
+   
+    overflow-y:auto ;
+    padding-right: 10px; 
+    margin-right: -10px;
+    box-sizing: border-box;
+    max-height: 60%;
+}
+
 #proj-name{
     color: rgb(225, 226, 230);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-
-
+    
 }
+
 #proj-desc{
     padding-top: 20px;
     color: rgb(148 163 184);
@@ -56,6 +82,7 @@
     margin: 20x auto;
     font-size:17px;
     text-align: justify;
+
 }
 .action-btn{
     color: rgb(225, 226, 230) !important;
@@ -68,10 +95,15 @@
 }
 
 
+.skill-pill{
+    box-shadow: 0 2px 5px rgba(145, 92, 182, .4);
 
+}
 @media screen and (max-width: 768px) {
     .project-container {
         padding: 0 10px;
+        flex-direction: column; 
+      
     }
 
     .project-container .col-md-6 {
@@ -82,4 +114,13 @@
     .project-card {
         padding: 20px;
     }
+    .card-content-container {
+        overflow-y:auto; 
+        padding-right: 10px; 
+        margin-right: -10px;
+        box-sizing: border-box;
+        max-height: 50%;
+    }
 }
+
+
