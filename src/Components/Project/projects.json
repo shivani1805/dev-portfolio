@@ -40,18 +40,14 @@
    
     { "_id": "P-4",
     "name": "Route Buddy",
-    "description": "This is career cupid",
+    "description": "A Java-based bus booking system designed to streamline travel from source to destination. The application offers interaction through a command-line interface, allowing users to easily book, cancel, and modify their bus reservations. For administrators, Route Buddy provides robust management tools to add, edit, and delete buses, routes, and driver information. Additionally, admins can visualize booking data, such as occupancy rates for each bus and the distribution of buses in their fleet. This feature facilitates efficient resource management and route planning, ensuring effective management of bus travel logistics.",
     "github": "https://github.com/shivani1805/Bus-Booking-System",
     "demo": "2023-05-15",
-    "image": ["/mages/neu.jpg"],
-    "skills":"react,express"  },
-   
-    { "_id": "P-5",
-    "name": "Dev Portfolio",
-    "description": "This is career cupid",
-    "github": "https://github.com/shivani1805/dev-portfolio",
-    "demo": "2023-05-15",
-    "image": ["/mages/neu.jpg"],
-    "skills":"react,express"  }
- ]
+    "image": [
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/routeb-1.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/routeb-2.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/routeb-3.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/routeb-4.png"],
+    "skills":"Java, MySQL, JFreeChart"  }
 
+ ]

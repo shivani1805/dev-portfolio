@@ -1,0 +1,67 @@
+.contact-header{
+    color: rgb(225, 226, 230);
+    font-size: 2.5rem;
+    line-height: 1em;
+    font-weight: 100;
+    letter-spacing: -0.015em;
+    text-align: center; 
+    margin: 90px auto 0px auto;
+    width: 100%; 
+}
+.contact-form-container{
+    background-color:rgb(17, 34, 64);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 8px;
+    margin-left: 30%;
+    margin-top: 80px;
+}
+.contact-form-header{
+    font-size: 1.5rem;
+    color: rgb(148 163 184);
+    font-weight: 200;
+}
+.contact-form-subheader{
+   
+    color: rgb(148 163 184);
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.contact-form-header{
+    color: rgb(225, 226, 230);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-textfield .MuiOutlinedInput-root {
+    border-color: rgb(148, 163, 184);
+  }
+  .custom-textfield .MuiOutlinedInput-root fieldset {
+    border-color: rgb(148, 163, 184);
+  }
+  .custom-textfield .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(148, 163, 184);
+  }
+  
+  .custom-textfield .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(148, 163, 184);
+  }
+  
+  .custom-textfield .MuiInputBase-input {
+    color: rgb(225, 226, 230);
+  }
+  
+  .custom-textfield .MuiInputLabel-root {
+    color: rgb(64, 224, 208);
+    font-size:small;
+  }
+  
+  .custom-textfield .MuiInputLabel-root.Mui-focused {
+    color:rgb(64, 224, 208)
+  }
+  
+  

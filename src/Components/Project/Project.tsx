@@ -5,6 +5,7 @@ import OpenInNew from '@mui/icons-material/OpenInNew';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import projectsData from './Projects.json';
+import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 
 import './Project.css';
 
@@ -33,12 +34,10 @@ const Project = () => {
                 autoPlay = {true}
                 stopOnHover={true}
                 emulateTouch
-                swipeable
-              >
+                swipeable>
                 {project.image.map((image, index) => (
                    <a href={image} target="_blank" rel="noopener noreferrer">
                   <div key={index}>
-                   
                       <CardMedia
                         component="img"
                         sx={{
@@ -70,7 +69,7 @@ const Project = () => {
                         size="small"
                         label={skill.trim()}
                         variant='outlined'
-                        sx={{ marginRight: 1, padding: 1, color: '#40e0d0', borderColor: '#40e0d0', fontFamily: 'monospace' }}
+                        sx={{ fontSize:'small', marginRight: 1, padding: 1, color: '#40e0d0', borderColor: '#40e0d0', fontFamily: 'monospace' }}
                       />
                     ))}
                   </Box>
@@ -79,7 +78,7 @@ const Project = () => {
                 <span dangerouslySetInnerHTML={{ __html: project.description }} />
                 </Typography>
                
-              <CardActions>
+              <CardActions sx={{marginTop:3.5}}>
                 <IconButton className='action-btn' href={project.github} target="_blank" rel="noopener noreferrer">
                   <FaGithub />
                 </IconButton>
@@ -92,6 +91,8 @@ const Project = () => {
           </Card>
         </div>
       ))}
+       <a href="https://github.com/shivani1805?tab=repositories" className="view-more" target="_blank" rel="noopener noreferrer">
+        View More <TrendingFlatIcon className="view-more-icon" /></a>
     </div>
   );
 }

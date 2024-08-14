@@ -1,6 +1,6 @@
 .footer {
     position: fixed;
-    right: 5;
+    /* right: 5px; */
     bottom: 0;
     display: flex;
     flex-direction: column;
@@ -30,3 +30,18 @@
     transform: translateY(-5px);
 } 
   
+@media (max-width: 900px) {
+  .glow-logo ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .glow-logo li {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    display: none;
+  }
+}

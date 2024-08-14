@@ -5,6 +5,7 @@ import Hero from './Components/Hero/Hero';
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
 import Project from './Components/Project/Project';
+import Contact from './Components/Contact/Contact';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Hero aboutSectionRef={aboutSectionRef} />
         <About ref={aboutSectionRef} />
         <Project/>
+        <Contact/>
         <Footer />
         </GradientBg>
 
