@@ -2,6 +2,7 @@ import emailjs from 'emailjs-com';
 import './Contact.css';
 import { Box, Button, Grid, TextField, Snackbar, Alert } from '@mui/material';
 import { useState } from 'react';
+import Footer from '../Footer/Footer';
 
 function Contact() {
     const [openSnackbar, setOpenSnackbar] = useState(false);
@@ -35,6 +36,7 @@ function Contact() {
 
     return (
         <div>
+        <div style={{marginBottom:'70px'}}>
             <div className='contact-header'>What's next ?</div>
             <div className='contact-form-container'>
                 <span className='contact-form-header'> Let's Connect</span>
@@ -86,7 +88,7 @@ function Contact() {
                                 variant="contained"
                                 color="primary"
                                 fullWidth
-                                sx={{ mt: 2, width: '80%' }}
+                                sx={{ mt: 2, width: '80%',mb:4 }}
                             >
                                 Send
                             </Button>
@@ -107,6 +109,8 @@ function Contact() {
                     {snackbarMessage}
                 </Alert>
             </Snackbar>
+           </div>
+           <Footer/>
         </div>
     );
 }

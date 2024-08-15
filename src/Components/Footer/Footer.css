@@ -1,47 +1,92 @@
 .footer {
-    position: fixed;
-    /* right: 5px; */
-    bottom: 0;
-    display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #1b242f;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+ 
+}
+
+.built-by {
+  flex: 1;
+  text-align: left;
+}
+
+.built-by-link {
+  color: rgb(225, 226, 230);
+  text-decoration: none;
+  font-size: 13px;
+  font-family: monospace;
+
+}
+.built-by-link:hover{
+  color: rgb(64, 224, 208);
+}
+
+.glow-logo {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.social-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-link {
+  font-size: 22px;
+  color: rgb(225, 226, 230);
+  padding: 0 10px;
+  display: inline-block;
+  transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.social-link:hover {
+  color: rgb(64, 224, 208);
+  transform: translateY(-5px);
+}
+
+.scroll-up-icon {
+  position: absolute;
+  top: -15px; 
+  left: 50%;
+  cursor: pointer;
+  color: black;
+  font-size: 35pt!important;
+  height: 50px !important;
+  background-color: rgb(64, 224, 208);
+  padding: 5px;
+}
+
+
+@media (max-width: 900px) {
+  .footer-content {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
-    background-color: transparent;
   }
-  
-  .glow-logo ul {
-    list-style: none;
-    margin-right: 20px;
-    margin-bottom: 15px
-  }
-  
-  
-  .glow-logo .social-link {
-    font-size: 22px;
-    color: rgb(225, 226, 230);
-    padding: 10px;
-    display: inline-block;
-    transition: transform 0.25s ease-in-out, color 0.25s ease-in-out;
-   
+  .built-by {
+    text-align: center;
+    padding-top: 50px;
+ 
   }
 
-.glow-logo .social-link:hover {
-    color: rgb(64, 224, 208, 1);
-    transform: translateY(-5px);
-} 
-  
-@media (max-width: 900px) {
-  .glow-logo ul {
-    flex-direction: row;
-    align-items: center;
+  .glow-logo {
+    text-align: center;
   }
 
-  .glow-logo li {
-    margin: 10px 0;
-  }
-}
-@media (max-width: 1200px) {
-  .footer {
-    display: none;
+  .social-links {
+    justify-content: center;
   }
 }

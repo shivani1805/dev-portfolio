@@ -54,8 +54,6 @@
 .project-card {
     text-align: left;
     background-color: rgb(17, 34, 64) !important;
-     /* rgb(17, 34, 64) !important; */
-    /* #1d293a !important; */
     width: 100%; 
     height: 720px; 
 }
@@ -110,13 +108,13 @@
     text-decoration: none;
     width: 100%; 
     max-width: 1200px;
-    transition: color 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
   .view-more-icon {
     font-size: 19px;
     margin-left: 2px; 
     color: rgb(64, 224, 208); 
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
    
   }
   .view-more:hover .view-more-icon {

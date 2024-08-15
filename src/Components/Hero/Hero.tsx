@@ -20,6 +20,7 @@ const Hero: React.FC<HeroProps> = ({ aboutSectionRef }) => {
   
 
   return (
+
     <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
       <div className="text-center">
         <div className='intro-head text-4xl'>
@@ -67,6 +68,7 @@ const Hero: React.FC<HeroProps> = ({ aboutSectionRef }) => {
         </div>
       </div>
     </div>
+    
   );
 };
 

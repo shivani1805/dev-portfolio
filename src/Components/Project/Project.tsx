@@ -1,11 +1,11 @@
 import React from 'react';
 import { Box, Card, CardActions, CardContent, CardMedia, Chip, IconButton, Typography } from "@mui/material";
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaLongArrowAltRight } from 'react-icons/fa';
 import OpenInNew from '@mui/icons-material/OpenInNew';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import projectsData from './Projects.json';
-import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
+
 
 import './Project.css';
 
@@ -92,7 +92,7 @@ const Project = () => {
         </div>
       ))}
        <a href="https://github.com/shivani1805?tab=repositories" className="view-more" target="_blank" rel="noopener noreferrer">
-        View More <TrendingFlatIcon className="view-more-icon" /></a>
+        View More <FaLongArrowAltRight className="view-more-icon" /></a>
     </div>
   );
 }

@@ -18,7 +18,7 @@ function App() {
         <About ref={aboutSectionRef} />
         <Project/>
         <Contact/>
-        <Footer />
+        
         </GradientBg>
 
     </div>
