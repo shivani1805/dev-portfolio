@@ -5,8 +5,22 @@
     font-weight: 100;
     letter-spacing: -0.015em;
     text-align: center; 
-    margin: 90px auto 0px auto;
+    margin: 0 auto;
+    padding-top: 110px;
     width: 100%; 
+}
+.contact-sub-header{
+  color: rgb(148 163 184);
+  font-weight: 200;
+  font-size: medium;
+  margin-bottom: 10px;
+  width: 40%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  margin-left: 30%;
+  margin-top: 20px;
+
 }
 .contact-form-container{
     background-color:rgb(17, 34, 64);
@@ -17,7 +31,7 @@
     align-items: center; 
     border-radius: 8px;
     margin-left: 30%;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .contact-form-header{
     font-size: 1.5rem;

@@ -8,7 +8,7 @@ interface HeroProps {
   aboutSectionRef: React.RefObject<HTMLDivElement>;
 }
 
-const Hero: React.FC<HeroProps> = ({ aboutSectionRef }) => {
+const Hero= React.forwardRef<HTMLDivElement, HeroProps> (({ aboutSectionRef},ref) => {
   const [hovered, setHovered] = useState(false);
 
 
@@ -21,7 +21,7 @@ const Hero: React.FC<HeroProps> = ({ aboutSectionRef }) => {
 
   return (
 
-    <div className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
+    <div ref={ref} className="container-fluid d-flex justify-content-center align-items-center min-vh-100">
       <div className="text-center">
         <div className='intro-head text-4xl'>
           Hi, I am Shivani<span className='period-col text-4xl'>.</span>
@@ -68,8 +68,9 @@ const Hero: React.FC<HeroProps> = ({ aboutSectionRef }) => {
         </div>
       </div>
     </div>
+
     
   );
-};
+});
 
 export default Hero;

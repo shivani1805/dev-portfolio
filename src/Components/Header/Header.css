@@ -1,0 +1,138 @@
+.header {
+    position: sticky;
+    top: 0;          
+    width: 100%;
+    background-color: #1b242f;
+    z-index: 1000;  
+    padding: 3px 0 3px 0 !important;
+    border-bottom: 1.5px solid rgb(64, 224, 208); 
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo {
+    flex: 1;
+    text-align: left;
+}
+
+.header-logo:hover {
+    color: rgb(64, 224, 208);
+}
+
+.component-container {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0 20px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.component-link {
+    font-size: 22px;
+    color: rgb(225, 226, 230);
+    padding: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.component-link.active-nav {
+    color: rgb(64, 224, 208);
+}
+
+.component-link:hover {
+    color: rgb(64, 224, 208);
+}
+
+.resume-btn {
+    border-color: rgb(64, 224, 208);
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+.secondary-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1b242f;
+    border-bottom: 1.5px solid rgb(64, 224, 208);
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .primary-header {
+        display: none;
+    }
+    .secondary-header {
+        display: block;
+    }
+    .menu-open .backdrop{
+        display: block;
+    }
+    .collapsed-menu-btn {
+        color: rgb(64, 224, 208);
+        display: flex;
+        justify-content: right;
+        padding: 10px;
+    }
+    .menu {
+        position: fixed;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-color: rgba(27, 36, 47, 0.95); 
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .menu.open {
+        display: flex;
+        transform: translateY(0);
+    }
+    
+    .menu a {
+        font-size: 20px;
+        color: rgb(225, 226, 230);
+        text-decoration: none;
+        margin: 20px 0;
+        transition: color 0.3s;
+    }
+    
+    .menu a.active-nav {
+        color: rgb(64, 224, 208);
+    }
+    
+    .menu a:hover {
+        color: rgb(64, 224, 208);
+    }
+    
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0); 
+        backdrop-filter: blur(8px); 
+        z-index: 999;
+        display: none ; 
+    }
+    
+
+}
+

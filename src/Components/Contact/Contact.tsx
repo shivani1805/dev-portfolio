@@ -3,8 +3,9 @@ import './Contact.css';
 import { Box, Button, Grid, TextField, Snackbar, Alert } from '@mui/material';
 import { useState } from 'react';
 import Footer from '../Footer/Footer';
+import React from 'react';
 
-function Contact() {
+const Contact = React.forwardRef<HTMLDivElement>((props, ref) => {
     const [openSnackbar, setOpenSnackbar] = useState(false);
     const [snackbarMessage, setSnackbarMessage] = useState('');
     const [snackbarSeverity, setSnackbarSeverity] = useState<'success' | 'error'>('success');
@@ -35,11 +36,15 @@ function Contact() {
     };
 
     return (
-        <div>
+        <div ref={ref}>
         <div style={{marginBottom:'70px'}}>
             <div className='contact-header'>What's next ?</div>
+            <div className='contact-sub-header'>
+            I am currently seeking Spring 2025 co-op positions or full-time software engineering oppportunites starting Summer 2025. 
+            </div>
             <div className='contact-form-container'>
                 <span className='contact-form-header'> Let's Connect</span>
+                
                 <span className='contact-form-subheader'>Send me a message! </span> 
                 <form onSubmit={sendEmail}>
                     <Grid container>
@@ -113,6 +118,6 @@ function Contact() {
            <Footer/>
         </div>
     );
-}
+});
 
 export default Contact;
