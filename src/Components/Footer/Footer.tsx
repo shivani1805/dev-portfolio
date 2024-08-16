@@ -3,7 +3,6 @@ import './Footer.css';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import AttachEmailOutlinedIcon from '@mui/icons-material/AttachEmailOutlined';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import { Button } from '@mui/material';
 
 
 function Footer() {

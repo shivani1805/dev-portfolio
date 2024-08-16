@@ -78,7 +78,7 @@ function Header({
       <header className='primary-header'>
         <div className="header-content container">
           <div className="header-logo">
-            <i className="fa-solid fa-square-s"></i>
+           {/* <a>S</a> */}
           </div>
           <div className="component-container">
           <a  href="" 

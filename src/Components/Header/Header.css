@@ -5,7 +5,7 @@
     background-color: #1b242f;
     z-index: 1000;  
     padding: 3px 0 3px 0 !important;
-    border-bottom: 1.5px solid rgb(64, 224, 208); 
+    border-bottom: 1px solid rgb(64, 224, 208); 
 }
 
 
@@ -19,11 +19,15 @@
 .header-logo {
     flex: 1;
     text-align: left;
+    color: rgb(64, 224, 208);
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 29px;
 }
 
-.header-logo:hover {
+/* .header-logo:hover {
     color: rgb(64, 224, 208);
-}
+} */
 
 .component-container {
     flex: 1;
@@ -89,7 +93,7 @@
     .menu {
         position: fixed;
         right: 0;
-        width: 50%;
+        width: 60%;
         height: 100%;
         background-color: rgba(27, 36, 47, 0.95); 
         display: none;

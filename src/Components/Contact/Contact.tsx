@@ -40,7 +40,7 @@ const Contact = React.forwardRef<HTMLDivElement>((props, ref) => {
         <div style={{marginBottom:'70px'}}>
             <div className='contact-header'>What's next ?</div>
             <div className='contact-sub-header'>
-            I am currently seeking Spring 2025 co-op positions or full-time software engineering oppportunites starting Summer 2025. 
+            I am currently seeking Spring 2025 co-op positions and full-time software engineering oppportunites starting Summer 2025. 
             </div>
             <div className='contact-form-container'>
                 <span className='contact-form-header'> Let's Connect</span>
