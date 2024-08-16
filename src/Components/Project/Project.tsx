@@ -4,7 +4,7 @@ import { FaGithub, FaLongArrowAltRight } from 'react-icons/fa';
 import OpenInNew from '@mui/icons-material/OpenInNew';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import projectsData from './Projects.json';
+import projectsData from './projects.json';
 import './Project.css';
 
 interface Project {
