@@ -129,10 +129,11 @@
     padding-left: 0;
   }
   .category-item{
-   width: 100%;
+   width: 80%;
   } 
   .skill-stack{
     margin: 0;
+    padding-left: 30px;
   }
   
 }
