@@ -77,5 +77,14 @@
   .custom-textfield .MuiInputLabel-root.Mui-focused {
     color:rgb(64, 224, 208)
   }
-  
+  @media (max-width: 768px) {
+    .contact-form-container{
+      width: 100%;
+      margin-left: 0;
+  }
+  .contact-sub-header{
+    width: 100%;
+    margin-left: 0;
+  }
+  }
   

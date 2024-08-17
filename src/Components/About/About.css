@@ -58,21 +58,6 @@
 }
 
 
-
-@media screen and (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about-left,
-  .about-right {
-    max-width: 100%; 
-    padding: 40px 0;
-  }
-
-}
-
 .skills-category{
   display: flex;
   flex-wrap: wrap;
@@ -129,3 +114,25 @@
   object-fit: contain;
 }
 
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-left,
+  .about-right {
+    max-width: 100%; 
+    padding: 40px 0;
+  }
+  .about-right ul {
+    padding-left: 0;
+  }
+  .category-item{
+   width: 100%;
+  } 
+  .skill-stack{
+    margin: 0;
+  }
+  
+}
