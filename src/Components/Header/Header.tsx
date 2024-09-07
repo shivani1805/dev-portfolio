@@ -101,7 +101,7 @@ function Header({
             className={`component-link ${activeSection === 'contact' ? 'active-nav' : ''}`}>
         Contact
         </a>
-        <a href="https://dev-portfolio-img.s3.us-east-2.amazonaws.com/Shivani-Sharma-Resume.pdf" target='_blank'  rel="noopener noreferrer" className="component-link resume-btn">
+        <a href="https://dev-portfolio-img.s3.us-east-2.amazonaws.com/Shivani-Sharma-Resume-NEU.pdf" target='_blank'  rel="noopener noreferrer" className="component-link resume-btn">
         Resume
         </a>
             
