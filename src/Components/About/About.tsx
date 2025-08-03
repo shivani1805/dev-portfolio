@@ -51,18 +51,26 @@ const About = forwardRef<HTMLDivElement>((props, ref) =>{
       <div className="about-left">
         <div className='about-header'>Beyond <span className="code">&lt;Code/&gt;</span></div>
         <p style={{paddingTop:"20px"}}>
-          My journey into computer science began unexpectedly when I found myself in the wrong class at school — 
-          and I've been captivated ever since. Over the past three years, I've had the privilege of developing software solutions for
-          leading MNCs in the automation and banking, financial services, and insurance sectors.
+          My journey into computer science began unexpectedly when I found myself in the wrong class at school.
+          That unexpected moment sparked a fascination for software development that’s only grown stronger over the years.
+         Over the past three years, I've had the opportunity to build software solutions for
+          leading multinational companies across the automation and BFSI (banking, financial services, and insurance) sectors.
         </p>
         <p>
-          Fast forward to today, I'm pursuing a graduate degree in Computer Science at <span style={{color:'rgb(64, 224, 208)'}}>Northeastern University</span> in Boston,
-          where I also contribute as an undergraduate teaching assistant. My primary focus now is on achieving certification in
-          AWS cloud technology to navigate the ever-expanding and dynamic tech landscape, while actively <span style={{color:'rgb(64, 224, 208)'}}>seeking opportunities</span> at
-          a company where learning and innovation intersect.
+          Fast forward to today, I'm pursuing a graduate degree in Computer Science at <span style={{color:'rgb(64, 224, 208)'}}>Northeastern University</span> in Boston.
+          Alongside my studies, I work as a teaching assistant and graduate research assistant at The Amal Lab for Precision Medicine. My current focus is deepening my expertise in Kubernetes aiming to become a 
+          Certified Kubernetes Application Developer while actively <span style={{color:'rgb(64, 224, 208)'}}>seeking full time opportunities</span> at
+          a company where learning and innovation intersect. 
         </p>
         <p>
-          Outside the realm of coding, you'll often find me at the gym, experimenting with new recipes in the kitchen
+        This summer, I’m wrapping up a rewarding co-op at <a 
+    href="https://wasabi.com/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    style={{ color: 'rgb(64, 224, 208)', textDecoration: 'none' }}
+  > Wasabi Hot Cloud Storage</a>, where I contributed as a Cloud Tech Engineer.        </p>
+        <p>
+          Outside the realm of coding, you'll often find me lifting at the gym, experimenting with new recipes in the kitchen
           or exploring Boston's vibrant culinary scene.
         </p>
       </div>

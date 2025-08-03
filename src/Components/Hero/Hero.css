@@ -1,49 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
 
+.hero-section {
+  background-color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  padding: 40px 20px;
+}
 
-.intro-head{
+.intro-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-bottom: 1rem;
+  font-family: 'Rubik', sans-serif;
+  margin-top: -70px;
+}
 
-   color: rgb(225,226,230);
-   font-family: 'Rubik';
-   
-   
+.greeting,
+.name,
+.tagline,
+.button-group {
+  margin-left: 200px;
 }
-.text-4xl {
-    font-size: 3.75rem;
-    line-height: 1em; 
-    font-weight: 700;
-    letter-spacing: -.015em;
-  }
-.type-look { 
-    color: rgb(64,224,208);
-    font-family: 'Rubik', sans-serif;
-    font-weight: 200;
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-.period-col {
-    color: rgb(64,224,208);
-    font-family: 'Rubik', sans-serif;
-}
-#glow-about-btn{
-    color: rgb(225,226,230);
-    border-color: rgb(225,226,230) ;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 16px;
-    transition: all 0.3s ease-in-out;
 
+.greeting {
+  font-size: 5rem; 
+  color: #222021;
+  font-weight: 700;
+  letter-spacing: -.015em;
 }
+
+.name {
+  font-size: 4rem; 
+  font-weight: 700;
+  color: #222021;
+  margin-top: 0.2rem;
+  letter-spacing: -.015em;
+}
+
+.tagline {
+  font-size: 1.3rem; 
+  font-weight: 200;
+  color: #777B7E;
+  line-height: 2rem;
+  margin-top: 0.5rem; 
+  font-family: 'Roboto';
+  text-align: left;
+  max-width: 600px;
+}
+
+.hero-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+  margin-top: -70px;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(64, 224, 208, 0.6);
+}
+
+.badge-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.credly-badge {
+  transition: transform 0.3s ease-in-out;
+}
+
+.credly-badge:hover {
+  transform: scale(1.1);
+}
+
+#glow-about-btn {
+  border-color: rgb(225, 226, 230);
+  padding: 15px 20px;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+}
+
 #glow-about-btn:hover {
-    color: rgb(64,224,208,1);
-    border-color: rgb(64,224,208,1) ;
-    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
-  }
+  color: rgb(12, 148, 134);
+  border-color: rgb(12, 148, 134);
+  box-shadow: 0 5px 15px rgba(64, 224, 208, 0.1);
+}
+
+#glow-contact-btn {
+  border-color: rgb(12, 148, 134);
+  background: rgb(12, 148, 134);
+  color: white;
+  padding: 15px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#glow-contact-btn:hover {
+  color: rgb(12, 148, 134);
+  border-color: rgb(12, 148, 134);
+  box-shadow: 0 5px 15px rgba(64, 224, 208, 0.1);
+  background: transparent;
+}
 
 .icon-transition {
   display: inline-block;
-  transition: all 0.4s ease; 
+  transition: all 0.4s ease;
   margin-left: 10px;
 }
 
@@ -57,5 +126,59 @@
   transform: rotate(90deg);
 }
 
- 
+/* ✅ RESPONSIVE SECTION */
+@media screen and (max-width: 992px) {
+  .greeting,
+  .name,
+  .tagline,
+  .button-group {
+    margin-left: 0 !important;
+    text-align: center;
+  }
 
+  .intro-head {
+    align-items: center;
+  }
+
+  .tagline {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .button-group {
+    justify-content: center !important;
+    gap: 15px;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .greeting {
+    font-size: 3.5rem;
+  }
+
+  .name {
+    font-size: 2.8rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .credly-badge {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}

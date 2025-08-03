@@ -152,3 +152,22 @@
 }
 
 
+.award-badge {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 95px;
+    height: 95px;
+    z-index: 10; 
+    pointer-events: none; 
+    transform: rotate(12deg);
+  }
+  @media screen and (max-width: 768px) {
+    .award-badge {
+      width: 70px;
+      height: 70px;
+      top: -15px;
+      left: -15px;
+    }
+  }
+    

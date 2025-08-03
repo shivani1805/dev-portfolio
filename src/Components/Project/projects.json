@@ -1,8 +1,23 @@
-[ { "_id": "P-1",
-    "name": "Pixel Perfect", 
+[ {
+    "_id": "P-5",
+    "name": "Think Flow",
+    "description": "AI-powered learning tool that makes education more accessible, engaging and personalized. It generates dynamic mind maps and AI-powered flashcards using Deepseek and Mistral AI models from user input to structure knowledge effectively. Designed with auditory and neurodivergent learners in mind, it includes text-to-speech and OpenDyslexic font support. The app features a React frontend, a Streamlit interface for input and a Node.js backend that connects to MongoDB for secure user data storage. Built at the <span style='color: #40e0d0;'>Civic Tech Hackathon</span> organised by BU Spark! & MLH, Thinkflow won <span style='color: #40e0d0;'>Most Social Impact</span> for its inclusive design.",
+    "github": "https://github.com/yourusername/thinkflow", 
+    "demo": "https://devpost.com/software/thinkflow", 
+    "image": [
+      "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow.png",
+      "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-2.png",
+      "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-3.png"
+    ],
+    "skills": "Streamlit,Deepseek,Mistral",
+    "award":"Winner"
+  }
+  ,
+    { "_id": "P-1",
+    "name": "Frame Works", 
     "description": "An image manipulation and enhancement tool designed to offer a comprehensive array of features. Built using the MVC architecture and the Command Design Pattern, it supports multiple interaction methods, including a Swing-based graphical user interface, an interactive text-based interface and batch processing via script files. Users can apply a wide range of filters such as sepia, luma and brightening, as well as perform image operations like sharpening, flipping, dithering and compression. Pixel Perfect is compatible with various image formats, including JPG, PNG and PPM and provides the flexibility to save manipulated images in any desired format.",
     "github": "https://github.com/shivani1805/Image-Manipulation-and-Enhancement",
-    "demo": "2023-05-15",
+    "demo": "https://github.com/shivani1805/Image-Manipulation-and-Enhancement",
     "image": [
         "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/ime.jpg",
         "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/ime2.png",
@@ -26,7 +41,7 @@
     "name": "Career Cupid",
     "description": "An efficient tool for both sides of the hiring equation, job seekers and recruiters. Recruiters can create profiles, post job openings, and manage applications, including viewing resumes and shortlisting candidates who apply. Job seekers can browse job listings that match their skill set and apply directly through the platform. To ensure user verification, a confirmation email is sent upon signup, allowing users to proceed with setting up their profiles. The platform features extensive admin functionality, including the requirement for recruiters to be approved by an admin before posting jobs. Additionally, admins have the ability to view and search seekers, postings, and recruiters across the board. To balance accessibility and privacy, anonymous users have limited access, while logged-in users enjoy full access to profiles and application details.",
     "github": "https://github.com/shivani1805/career-cupid-fe",
-    "demo": "2023-05-15",
+    "demo": "https://career-cupid.netlify.app/",
     "image": [
             "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-1.png",
             "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/career-cupid-2.png",
@@ -37,9 +52,22 @@
             
     ],
     "skills":"React,Express,Material UI"  },
-   
+    {
+        "_id": "P-6",
+        "name": "SHEdule ",
+        "description": "Built during SheHack'25 at Northeastern University, SHEdule is a web app designed to empower women by combining efficient task scheduling with personalized wellness recommendations. The app promotes work-life balance by suggesting enriching activities intelligently around daily tasks. SHEdule features Eva, an AI assistant that provides tailored suggestions based on the user’s menstrual cycle, predicting future phases from previously recorded data.",
+        "github": "https://github.com/shivani1805/SHEdule", 
+        "demo": "https://www.youtube.com/watch?v=QM3SMmxBcIw", 
+        "image": [
+            "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow.png",
+            "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-2.png",
+            "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-3.png"
+        ],
+        "skills": "Ollama Mistral,Google TTS,PostgreSQL"
+
+      },
     { "_id": "P-4",
-    "name": "Route Buddy",
+    "name": "Grab-a-Seat",
     "description": "A Java-based bus booking system designed to streamline travel from source to destination. The application offers interaction through a command-line interface, allowing users to easily book, cancel, and modify their bus reservations. For administrators, Route Buddy provides robust management tools to add, edit, and delete buses, routes, and driver information. Additionally, admins can visualize booking data, such as occupancy rates for each bus and the distribution of buses in their fleet. This feature facilitates efficient resource management and route planning, ensuring effective management of bus travel logistics.",
     "github": "https://github.com/shivani1805/Bus-Booking-System",
     "demo": "https://github.com/shivani1805/Bus-Booking-System",

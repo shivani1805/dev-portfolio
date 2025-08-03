@@ -90,4 +90,12 @@
     margin-top: 30px;
   }
   }
+  .contact-header::after {
+    content: "";
+    height: 3px;
+    background-color: rgb(64, 224, 208);
+    width: 60px;
+    display: block;
+    margin: 15px auto;
+}
   

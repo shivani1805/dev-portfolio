@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import projectsData from './projects.json';
 import './Project.css';
+import award from '../Images/award.png';
 
 interface Project {
   _id: string;
@@ -15,17 +16,21 @@ interface Project {
   demo: string;
   image: string[];
   skills: string;
+  award?: string;
 }
 
 const Project = React.forwardRef<HTMLDivElement>((props, ref) => {
-
   return (
     <div className='project-container' ref={ref}>
       <div className='project-header'>Projects</div>
       <div className='project-sub-header'>Check out a selection of things I've built</div>
       {projectsData.map((project) => (
         <div className='col-md-6' key={project.name}>
-          <Card className='project-card' sx={{ p: 1 }}>
+          <Card className='project-card' sx={{ p: 1, position: 'relative',
+    overflow: 'visible',  }}>
+          {project.award && (
+        <img src={award} alt="Award" className="award-badge" />
+          )}    
             <Box sx={{ display: 'flex', justifyContent: 'center', m: 2 }}>
               <Carousel
                 showThumbs={false}
@@ -35,8 +40,8 @@ const Project = React.forwardRef<HTMLDivElement>((props, ref) => {
                 emulateTouch
                 swipeable>
                 {project.image.map((image, index) => (
-                  <a href={image} target="_blank" rel="noopener noreferrer">
-                    <div key={index}>
+                  <a key={index} href={image} target="_blank" rel="noopener noreferrer">
+                    <div>
                       <CardMedia
                         component="img"
                         sx={{
@@ -52,7 +57,7 @@ const Project = React.forwardRef<HTMLDivElement>((props, ref) => {
                 ))}
               </Carousel>
             </Box>
-            <Box className='card-content-container' sx={{ display: 'flex', flexDirection: 'column', flex: '1 0 auto' }} >
+            <Box className='card-content-container' sx={{ display: 'flex', flexDirection: 'column', flex: '1 0 auto' }}>
               <CardContent>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <Typography id='proj-name' component="div" variant="h5">
@@ -66,12 +71,25 @@ const Project = React.forwardRef<HTMLDivElement>((props, ref) => {
                         size="small"
                         label={skill.trim()}
                         variant='outlined'
-                        sx={{ fontSize: 'small', marginRight: 1, padding: 1, color: '#40e0d0', borderColor: '#40e0d0', fontFamily: 'monospace' }}
+                        sx={{
+                          fontSize: 'small',
+                          marginRight: 1,
+                          padding: 1,
+                          color: '#40e0d0',
+                          borderColor: '#40e0d0',
+                          fontFamily: 'monospace'
+                        }}
                       />
                     ))}
                   </Box>
                 </Box>
-                <Typography id='proj-desc' variant="body2" color="text.secondary" component="div" sx={{ mt: 1, mb: 2, fontSize: '15px !important' }}>
+                <Typography
+                  id='proj-desc'
+                  variant="body2"
+                  color="text.secondary"
+                  component="div"
+                  sx={{ mt: 1, mb: 2, fontSize: '15px !important' }}
+                >
                   <span dangerouslySetInnerHTML={{ __html: project.description }} />
                 </Typography>
                 <CardActions sx={{ marginTop: 3.5 }}>
@@ -88,7 +106,8 @@ const Project = React.forwardRef<HTMLDivElement>((props, ref) => {
         </div>
       ))}
       <a href="https://github.com/shivani1805?tab=repositories" className="view-more" target="_blank" rel="noopener noreferrer">
-        View More <FaLongArrowAltRight className="view-more-icon" /></a>
+        View More <FaLongArrowAltRight className="view-more-icon" />
+      </a>
     </div>
   );
 });
