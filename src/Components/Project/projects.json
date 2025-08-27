@@ -5,9 +5,9 @@
     "github": "https://github.com/shivani1805/react-mindmap-app", 
     "demo": "https://devpost.com/software/thinkflow", 
     "image": [
-      "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow.png",
-      "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-2.png",
-      "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-3.png"
+      "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/thinkflow.png",
+      "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/thinkflow-2.png",
+      "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/thinkflow-3.png"
     ],
     "skills": "Streamlit,Deepseek,Mistral",
     "award":"Winner"
