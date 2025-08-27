@@ -2,7 +2,7 @@
     "_id": "P-5",
     "name": "Think Flow",
     "description": "AI-powered learning tool that makes education more accessible, engaging and personalized. It generates dynamic mind maps and AI-powered flashcards using Deepseek and Mistral AI models from user input to structure knowledge effectively. Designed with auditory and neurodivergent learners in mind, it includes text-to-speech and OpenDyslexic font support. The app features a React frontend, a Streamlit interface for input and a Node.js backend that connects to MongoDB for secure user data storage. Built at the <span style='color: #40e0d0;'>Civic Tech Hackathon</span> organised by BU Spark! & MLH, Thinkflow won <span style='color: #40e0d0;'>Most Social Impact</span> for its inclusive design.",
-    "github": "https://github.com/yourusername/thinkflow", 
+    "github": "https://github.com/shivani1805/react-mindmap-app", 
     "demo": "https://devpost.com/software/thinkflow", 
     "image": [
       "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow.png",
