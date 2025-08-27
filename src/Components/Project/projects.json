@@ -59,9 +59,10 @@
         "github": "https://github.com/shivani1805/SHEdule", 
         "demo": "https://www.youtube.com/watch?v=QM3SMmxBcIw", 
         "image": [
-            "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow.png",
-            "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-2.png",
-            "https://ssharma-portfolio-assets.s3.us-east-1.amazonaws.com/thinkflow-3.png"
+          "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/shedule-1.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/shedule-2.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/shedule-3.png",
+        "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/shedule-4.png"
         ],
         "skills": "Ollama Mistral,Google TTS,PostgreSQL"
 
