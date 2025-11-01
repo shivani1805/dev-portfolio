@@ -18,6 +18,8 @@ function Header({
 }: HeaderProps) {
   const [activeSection, setActiveSection] = useState<string>('');
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const resumeURL = "https://dev-portfolio-img.s3.us-east-2.amazonaws.com/Shivani-Sharma-SDE.pdf";
+
 
 
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
@@ -101,7 +103,7 @@ function Header({
             className={`component-link ${activeSection === 'contact' ? 'active-nav' : ''}`}>
         Contact
         </a>
-        <a href="https://dev-portfolio-img.s3.us-east-2.amazonaws.com/Shivani-Sharma-SDE.pdf" target='_blank'  rel="noopener noreferrer" className="component-link resume-btn">
+        <a href={resumeURL} target='_blank'  rel="noopener noreferrer" className="component-link resume-btn">
         Resume
         </a>
             
@@ -133,7 +135,7 @@ function Header({
             className={`menu-link ${activeSection === 'contact' ? 'active-nav' : ''}`}>
         Contact
         </a>
-        <a href="https://dev-portfolio-img.s3.us-east-2.amazonaws.com/Shivani-Sharma-Resume.pdf" target='_blank'  rel="noopener noreferrer" className="component-link resume-btn">
+        <a href={resumeURL} target='_blank'  rel="noopener noreferrer" className="component-link resume-btn">
         Resume
         </a>
         </div>
